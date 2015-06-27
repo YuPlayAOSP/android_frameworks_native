@@ -66,6 +66,16 @@ struct BatteryProperties {
     int batteryTemperature;
     String8 batteryTechnology;
 
+    bool dockBatterySupported;
+    bool chargerDockAcOnline;
+    int dockBatteryStatus;
+    int dockBatteryHealth;
+    bool dockBatteryPresent;
+    int dockBatteryLevel;
+    int dockBatteryVoltage;
+    int dockBatteryTemperature;
+    String8 dockBatteryTechnology;
+
     status_t writeToParcel(Parcel* parcel) const;
     status_t readFromParcel(Parcel* parcel);
 };
